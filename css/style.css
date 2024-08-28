@@ -7,7 +7,7 @@ body {
 
 header .top-bar {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
@@ -31,7 +31,7 @@ header .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 20px 20px;
   background-color: #f5f5f5;
 }
 header .main-nav .logo h1 {
@@ -53,6 +53,9 @@ header .main-nav .search-bar select, header .main-nav .search-bar input {
   margin-right: 5px;
   font-size: 14px;
 }
+header .main-nav .search-bar input {
+  width: 25vw;
+}
 header .main-nav .search-bar button {
   color: #fff;
   padding: 8px 15px;
@@ -63,7 +66,7 @@ header .main-nav .user-actions a {
   color: #333;
   text-decoration: none;
   margin-right: 15px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 header .main-nav .user-actions a:last-child {
   margin-right: 0;
@@ -73,7 +76,7 @@ header .main-nav .user-actions a:hover {
 }
 header .sub-nav {
   background-color: #0056b3;
-  padding: 10px 20px;
+  padding: 10px 35px;
   display: flex;
   justify-content: space-between;
 }
@@ -87,6 +90,7 @@ header .sub-nav a:hover {
   background-color: #003d80;
 }
 header .sub-nav a.all-departments {
+  padding: 10px 35px;
   background-color: #ffcc00;
   color: #333;
   position: relative;
@@ -117,6 +121,271 @@ header .sub-nav a.new .new {
 header .sub-nav a.blog {
   background-color: #ffcc00;
   color: #333;
+}
+
+.promo-section {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+.promo-section .carousel-container {
+  flex: 2;
+}
+.promo-section .carousel-container .carousel-item img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+}
+.promo-section .carousel-container .carousel-item .carousel-caption {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+.promo-section .carousel-container .carousel-item .carousel-caption h3 {
+  font-size: 1rem;
+  color: white;
+  background-color: blue;
+  width: 70px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.promo-section .carousel-container .carousel-item .carousel-caption h2 {
+  color: black;
+}
+.promo-section .carousel-container .carousel-item .carousel-caption .learn-more-btn {
+  color: black;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid black;
+  display: inline-block;
+}
+.promo-section .right-promo-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo-section .right-promo-container .promo-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.promo-section .right-promo-container .promo-box h4 {
+  font-size: 0.9rem;
+  color: blue;
+}
+.promo-section .right-promo-container .promo-box p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.promo-section .right-promo-container .promo-box .common-box {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.promo-section .right-promo-container .promo-box .common-box .common-img {
+  height: 150px;
+  width: 500px;
+}
+.promo-section .right-promo-container .promo-box .common-box .common-img img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2f3c48;
+  padding: 20px 20px;
+}
+.features .feature-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+.features .feature-item .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  margin: 10px;
+  border: 1px solid orange;
+  justify-content: center;
+  align-items: center;
+}
+.features .feature-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px 0;
+}
+.features .feature-item p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #aaa;
+}
+
+.categories {
+  padding: 40px 20px;
+}
+.categories h1 {
+  padding: 10px;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.categories .rule {
+  width: 5%;
+  margin: auto;
+  border: 1px solid rgba(255, 0, 0, 0.85);
+}
+.categories .rules {
+  width: 5%;
+  border: 1px solid rgba(255, 0, 0, 0.85);
+}
+.categories p {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  color: rgb(122, 117, 117);
+}
+.categories p a {
+  color: blue;
+}
+
+.fashion-heading-image {
+  width: 90%;
+  height: 200px;
+}
+
+.anchor-links ul li {
+  display: block;
+  line-height: 42px;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.categories h1 {
+  padding-top: 20px;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+.categories .rule,
+.categories .rules {
+  width: 5%;
+  margin-block: -8px;
+  border: 1px solid rgba(255, 0, 0, 0.8509803922);
+}
+.categories .rule.rules,
+.categories .rules.rules {
+  margin-block: -3px;
+}
+.categories p {
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  color: rgb(122, 117, 117);
+}
+.categories p a {
+  color: blue;
+}
+
+.cartItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 47px;
+  left: 43px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: rgba(255, 0, 0, 0.89);
+  color: white;
+  padding: 4px 41px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.g {
+  color: #267c34;
+}
+
+.r {
+  color: red;
+}
+
+.catOptions {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+.catOptions li {
+  padding: 13px;
+  background-color: rgb(220, 220, 220);
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+}
+.catOptions li:hover {
+  background-color: rgba(0, 0, 255, 0.85);
+  color: white;
+  font-weight: bolder;
+}
+
+.catCards {
+  display: flex;
+}
+.catCards .cardimg-tag {
+  position: relative;
+  margin: 10px;
+  height: 350px;
+  width: 400px;
+  overflow: hidden;
+}
+.catCards .cardimg-tag img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.catCards .cardimg-tag .product-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.catCards .cardimg-tag .cardlink {
+  padding: 0.5rem 0;
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 20%;
+  background-color: white;
+  border-radius: 10px;
+  width: 55%;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.catCards .cardimg-tag .cardlink a {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
