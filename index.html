@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" /> -->
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
 
 </head>
 <body>
@@ -83,7 +88,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="phones.png" class="d-block w-60" alt="First slide">
+                    <img src="./images/phones.png" class="d-block w-60" alt="First slide">
                     <div class="carousel-caption">
                       <h3>MOBILE</h3>
                       <h2 class="carousel-title">Best mobile options at any resolution</h2>
@@ -91,7 +96,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="headphones.png" class="d-block w-60" alt="Second slide">
+                    <img src="./images/hero.png" class="d-block w-60" alt="Second slide">
                     <div class="carousel-caption">
                       <h3>MOBILE</h3>
                       <h2 class="carousel-title">Best mobile options at any resolution</h2>
@@ -99,7 +104,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="comp.png" class="d-block w-60" alt="Third slide">
+                    <img src="./images/comp.png" class="d-block w-60" alt="Third slide">
                     <div class="carousel-caption">
                       <h3>MOBILE</h3>
                       <h2 class="carousel-title">Best mobile options at any resolution</h2>
@@ -125,7 +130,7 @@
                     <p>Intelligent & Durable Design</p>
                   </div>
                   <div class="common-img">
-                    <img src="smart.png" alt="">
+                    <img src="./images/smart.png" alt="">
                   </div>
                 </div>
               </div>
@@ -136,7 +141,7 @@
                     <p>Intelligent & Durable Design</p>
                   </div>
                   <div class="common-img">
-                    <img src="watch.png" alt="">
+                    <img src="./images/watch.png" alt="">
                   </div>
                 </div>
               </div>
@@ -188,67 +193,228 @@
       </div>
 
     <!-- why buy from us  -->
-    <section>
-      <div class="wrapper">
-        <div class="categories">
-          <h1>Why buy from us?</h1>
-          <hr class="rule" />
-          <p>
-            Journal has been the best selling and most loved Opencart theme
-            since first launch in 2013. Tried and tested by over 20k people,
-            Journal is the best Opencart theme framework on the market today.
-            <a href="">Learn more</a>
-          </p>
-          <div>
-            <ul class="catOptions">
-              <div class="down-arrow">
-                <li class="catoption1">FEATURED</li>
-              </div>
-              <li class="catoption2">ELECTRONICS</li>
-              <li class="catoption3">BEAUTY</li>
-              <li class="catoption4">FASHION</li>
-            </ul>
-          </div>
-          <br>
-          <div class="catCards">
-            <div class="cardimg-tag">
-              <img src="fashion.jpg">
-             <div class="cardlink"><a>FASHION</a></div>
-            </div>
-  
-            <div class="cardimg-tag">
-              <img src="bags.jpg" alt="">
-      
-              <div class="cardlink"><a>BAGS</a></div>
-            </div>
-  
-            <div class="cardimg-tag">
-          <img src="health.jpg" alt="">
-              <div class="cardlink"><a>HEALTH</a></div>
-            </div>
-  
-            <div class="cardimg-tag">
-            <img src="footwear.jpg" alt="">
-              <div class="cardlink"><a>FOOTWEAR</a></div>
-            </div>
-  
-            <div class="cardimg-tag">
-            <img src="home decor.jpg" alt="">
-              <div class="cardlink"><a>HOME DECOR</a></div>
-            </div>
-          </div>
-        </div>
-       
-       
+    <div class="container-why">
+      <h2 class="section-title">WHY BUY FROM US?</h2>
+      <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio.</p>
+      <div class="tabs">
+          <button class="tab-button active">Top Categories</button>
+          <button class="tab-button">Electronics</button>
+          <button class="tab-button">Beauty</button>
+          <button class="tab-button">Fashion</button>
       </div>
-      <br>
-      
-    </section>
-  
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="container-fluid">
+      <section class="category-carousel-section">
+        <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#categoryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#categoryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <!-- Add more buttons for additional carousel items -->
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/fashion.jpg" class="d-block w-100" alt="Home Decor">
+                  <div class="carousel-caption category-caption">
+                    <h5>FASHION</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/bags.jpg" class="d-block w-100" alt="Headphone">
+                  <div class="carousel-caption category-caption">
+                    <h5>BAGS</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/health.jpg" class="d-block w-100" alt="Beauty & Health">
+                  <div class="carousel-caption category-caption">
+                    <h5>BEAUTY</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/footwear.jpg" class="d-block w-100" alt="Bags">
+                  <div class="carousel-caption category-caption">
+                    <h5>FOOTWEAR</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items in sets of four -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/home decor.jpg" class="d-block w-100" alt="Item 1">
+                  <div class="carousel-caption category-caption">
+                    <h5>HOME</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/bags.jpg" class="d-block w-100" alt="Item 2">
+                  <div class="carousel-caption category-caption">
+                    <h5>BAGS</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/health.jpg" class="d-block w-100" alt="Item 3">
+                  <div class="carousel-caption category-caption">
+                    <h5>ITEM 3</h5>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <img src="images/footwear.jpg" class="d-block w-100" alt="Item 4">
+                  <div class="carousel-caption category-caption">
+                    <h5>ITEM 4</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- products  -->
+    <div class="container-product">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Display any products as tabs or accordions with optional grid or carousel mode...</p>
+      <div class="tabs">
+          <button class="tab-button active">Featured</button>
+          <button class="tab-button">Latest</button>
+          <button class="tab-button">Bestsellers</button>
+          <button class="tab-button">Specials</button>
+      </div>
+      <div class="carousel-item">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/bags.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/bags.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/bags.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="products-grid">
+          <div class="product-card">
+              <div class="labels">
+                  <span class="custom-label">Custom Labels</span>
+                  <!-- <span class="hot-label">Hot</span> -->
+                  <span class="discount-label">-70%</span>
+              </div>
+              <img src="./images/headphones.jpg" alt="Headphones" class="product-image">
+              <div class="product-info">
+                  <span class="brand">Ericksson</span>
+                  <span class="model">Model 519</span>
+                  <span class="product-name">Headphones</span>
+                  <span class="price"><del>$3,299.00</del> $999.00</span>
+                  <div class="actions">
+                      <input type="number" value="1" min="1">
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-links">
+                      <a href="#" class="buy-now">Buy Now</a>
+                      <a href="#" class="question">Question</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="product-card">
+              <div class="labels">
+                  <span class="days-label">2-3 Days</span>
+                  <span class="top-brand-label">Top Brand</span>
+              </div>
+              <img src="./images/footwear.jpg" alt="Women's Maria Pump" class="product-image">
+              <div class="product-info">
+                  <span class="brand">NY Fashion</span>
+                  <span class="model">Model 206</span>
+                  <span class="product-name">Women's Maria Pump</span>
+                  <span class="price">$425.00</span>
+                  <div class="actions">
+                      <input type="number" value="1" min="1">
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-links">
+                      <a href="#" class="buy-now">Buy Now</a>
+                      <a href="#" class="question">Question</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="product-card">
+              <div class="labels">
+                  <span class="pre-order-label">Pre-order</span>
+                  <span class="free-label">Free</span>
+              </div>
+              <img src="./images/tv.jpg" alt="Toshiba 5009 Smart TV" class="product-image">
+              <div class="product-info">
+                  <span class="brand">Ericksson</span>
+                  <span class="model">Model 995</span>
+                  <span class="product-name">Toshiba 5009 Smart TV</span>
+                  <span class="price">$0.00</span>
+                  <div class="actions">
+                      <input type="number" value="1" min="1">
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-links">
+                      <a href="#" class="buy-now">Buy Now</a>
+                      <a href="#" class="question">Question</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="product-card">
+              <div class="labels">
+                  <span class="pre-order-label">Pre-order</span>
+                  <span class="hot-label">Hot</span>
+              </div>
+              <img src="./images/camera.jpg" alt="Leica Digital Camera" class="product-image">
+              <div class="product-info">
+                  <span class="brand">Ericksson</span>
+                  <span class="model">Model 994</span>
+                  <span class="product-name">Leica Digital Camera</span>
+                  <span class="price">$2,189.00</span>
+                  <div class="actions">
+                      <input type="number" value="1" min="1">
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-links">
+                      <a href="#" class="buy-now">Buy Now</a>
+                      <a href="#" class="question">Question</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+  </div>
 </html>
